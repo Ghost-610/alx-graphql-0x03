@@ -3,6 +3,8 @@ import { GET_EPISODES } from "@/graphql/queries"
 import { EpisodeProps } from "@/interfaces"
 import EpisodeCard from "@/components/common/EpisodeCard"
 import { useEffect, useState } from "react"
+import ErrorProneComponent from '@/components/ErrorProneComponent';
+
 
 
 
@@ -32,6 +34,7 @@ const Home: React.FC = () => {
         <h1 className="text-4xl font-bold tracking-wide">Rick and Morty Episodes</h1>
         <p className="mt-2 text-lg italic">Explore the multiverse of adventures!</p>
       </header>
+      <ErrorProneComponent />
 
       {/* Main Content */}
       <main className="flex-grow p-6">
